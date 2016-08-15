@@ -1,20 +1,32 @@
 class UsSwimTeam::Swimmer
-  attr_accessor :age, :height, :hometown, :coach, :event, :highlights, :quote, :gender 
+  attr_accessor :name, :age, :height, :hometown, :coach, :event, :highlights, :quote, :gender 
 
-  @@all = [["men"], ["women"]]
+  @@all = []
 
   def self.all
-    @@all
+    phelps = self.new
+    phelps.name = "Michale Phelps"
+    phelps.age = "31"
+    phelps.height = "6'2"
+    phelps.hometown = "Baltimore, MD"
+    phelps.coach = "Aquaman"
+    phelps.event = "200m fly"
+    phelps.highlights = "23 gold medals"
+    phelps.quote = "don't drink and drive"
+    phelps.gender = "male"
+
+    phelps
+
   end
 
   def self.men
-    @@all[0]
+    puts "mens list"
   end
 
   def self.female
-    @@all[1]
+    puts "womens list"
   end
-  
+
 
 
 

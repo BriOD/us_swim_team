@@ -7,6 +7,9 @@ class UsSwimTeam::CLI
     menu
   end
 
+
+  
+
   def menu
     input = nil
     while input != "exit"
@@ -14,7 +17,7 @@ class UsSwimTeam::CLI
       input = gets.strip.downcase
       case input 
       when "m"
-        UsSwimTeam::Swimmer.men  #placeholder for actual list to come later
+        UsSwimTeam::Swimmer.all  #placeholder for actual list to come later
       when "w"
         UsSwimTeam::Swimmer.female #placeholder for actual list to come late
 

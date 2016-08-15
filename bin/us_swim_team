@@ -2,5 +2,8 @@
 
 require './lib/us_swim_team'
 
+# require "bundler/setup"
+# require "us_swim_team"
+
 UsSwimTeam::CLI.new.call
 
