@@ -8,7 +8,7 @@ class UsSwimTeam::CLI
   end
 
 
-  
+
 
   def menu
     input = nil
@@ -17,15 +17,32 @@ class UsSwimTeam::CLI
       input = gets.strip.downcase
       case input 
       when "m"
-        UsSwimTeam::Swimmer.all  #placeholder for actual list to come later
+        print_mens  #placeholder for actual list to come later
       when "w"
-        UsSwimTeam::Swimmer.female #placeholder for actual list to come late
+        print_womens #placeholder for actual list to come late
 
       else 
         puts "Not sure what you want, type 'm', 'w', or 'exit'"
       end
     end
   end
+
+  def print_mens
+    puts ""
+    puts "--------------US Olympic Mens Swiming Temam--------------"
+    puts ""
+    
+  end
+
+  def print_womens
+    puts ""
+    puts "--------------US Olympic Mens Swiming Temam--------------"
+    puts ""
+
+
+  end
+
+
 
 
 end
