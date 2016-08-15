@@ -14,9 +14,9 @@ class UsSwimTeam::CLI
       input = gets.strip.downcase
       case input 
       when "m"
-        puts "mens list"  #placeholder for actual list to come later
+        UsSwimTeam::Swimmer.men  #placeholder for actual list to come later
       when "w"
-        puts "womens list" #placeholder for actual list to come late
+        UsSwimTeam::Swimmer.female #placeholder for actual list to come late
 
       else 
         puts "Not sure what you want, type 'm', 'w', or 'exit'"
