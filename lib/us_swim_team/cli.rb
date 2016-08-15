@@ -8,15 +8,18 @@ class UsSwimTeam::CLI
   end
 
   def menu
-    puts "Enter 'm' for a list of the mens team. Enter 'w' for a list of the womens team. Enter 'exit' to exit."
     input = nil
     while input != "exit"
+      puts "Enter 'm' for a list of the mens team. Enter 'w' for a list of the womens team. Enter 'exit' to exit."
       input = gets.strip.downcase
       case input 
       when "m"
         puts "mens list"  #placeholder for actual list to come later
       when "w"
         puts "womens list" #placeholder for actual list to come late
+
+      else 
+        puts "Not sure what you want, type 'm', 'w', or 'exit'"
       end
     end
   end
