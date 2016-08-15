@@ -15,12 +15,10 @@ class UsSwimTeam::CLI
     while input != "exit"
       puts "Enter 'm' for a list of the mens team. Enter 'w' for a list of the womens team. Enter 'exit' to exit."
       input = gets.strip.downcase
-      case input 
-      when "m"
-        print_mens  #placeholder for actual list to come later
-      when "w"
-        print_womens #placeholder for actual list to come late
-
+      if input == "m"
+        print_mens
+      elsif input == "w"
+        print_womens
       else 
         puts "Not sure what you want, type 'm', 'w', or 'exit'"
       end
@@ -32,11 +30,12 @@ class UsSwimTeam::CLI
     puts "--------------US Olympic Mens Swiming Temam--------------"
     puts ""
     
+    
   end
 
   def print_womens
     puts ""
-    puts "--------------US Olympic Mens Swiming Temam--------------"
+    puts "--------------US Olympic Womens Swiming Temam--------------"
     puts ""
 
 

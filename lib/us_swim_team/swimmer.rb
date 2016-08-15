@@ -15,7 +15,7 @@ class UsSwimTeam::Swimmer
     phelps.quote = "don't drink and drive"
     phelps.gender = "male"
 
-    phelps
+    [phelps]
 
   end
 
