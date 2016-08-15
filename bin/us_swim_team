@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby 
 
-require 'us_swim_team'
+require './lib/us_swim_team'
 
 UsSwimTeam::CLI.new.call
 

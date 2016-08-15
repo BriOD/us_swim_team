@@ -1,5 +1,2 @@
-require "us_swim_team/version"
-
-module UsSwimTeam
-  # Your code goes here...
-end
+require_relative "us_swim_team/version"
+require_relative './us_swim_team/cli'
