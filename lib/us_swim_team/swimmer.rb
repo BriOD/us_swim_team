@@ -27,7 +27,32 @@ class UsSwimTeam::Swimmer
     puts "womens list"
   end
 
+  def self.athletes
+    self.scrape_swimmers
 
+  end
+
+
+  def self.scrape_swimmers
+    swimmers = []
+
+
+    # Go to usaswimming, find swimmers
+    #extract attributes
+    #instantiate swimmer
+
+    swimmers << self.scrape_usaswimming
+
+
+    swimmers
+
+
+  end
+
+  def self.scrape_usaswimming
+    doc = Nokogiri::HTML(open("http://www.usaswimming.org/ViewNewsArticle.aspx?TabId=1&itemid=15733&mid=14491"))
+    binding.pry
+  end
 
 
 
