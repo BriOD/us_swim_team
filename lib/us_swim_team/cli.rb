@@ -26,9 +26,15 @@ class UsSwimTeam::CLI
   end
 
   def print_mens
+
+
     puts ""
     puts "--------------US Olympic Mens Swiming Temam--------------"
     puts ""
+    mens_array.each.with_index(1) do |swimmer, i|
+      puts "#{i}: #{swimmer.name}."
+    end
+
     
     
   end
@@ -37,9 +43,35 @@ class UsSwimTeam::CLI
     puts ""
     puts "--------------US Olympic Womens Swiming Temam--------------"
     puts ""
+    womens_array.each.with_index(1) do |swimmer, i|
+      puts "#{i}: #{swimmer.name}"
+    end
+
 
 
   end
+
+  def mens_array
+    mens_team = []
+    UsSwimTeam::Swimmer.all.each do |swimmer|
+      mens_team << swimmer.gender == "men"
+
+    end
+    mens_team
+  end
+
+
+  def womens_array
+    womens_team = []
+    UsSwimTeam::Swimmer.all.each do |swimmer|
+      womens_team << swimmer.gender == "women"
+      end
+      womens_team
+
+  end
+
+
+
 
 
 
